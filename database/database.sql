@@ -40,7 +40,7 @@ CREATE TABLE students (
 CREATE TABLE notes (
   id_test smallserial,
   id_student varchar(50),
-  value_test integer NOT NULL,
+  value_test float NOT NULL,
   CONSTRAINT fk_notes_tests FOREIGN KEY(id_test) REFERENCES tests(id),
   CONSTRAINT fk_notes_students FOREIGN KEY(id_student) REFERENCES students(id)
 );
