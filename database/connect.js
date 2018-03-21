@@ -1,4 +1,4 @@
-const { Pool } = require('pg')
+const { Client } = require('pg')
 const connectionData = {
   user: 'alejandro',
   host: '',
@@ -6,7 +6,7 @@ const connectionData = {
   password: '',
   port: 5432,
 }
-const pool = new Pool(connectionData)
+const client = new Client(connectionData)
 
-module.exports = pool
+module.exports = client
 
